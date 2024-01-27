@@ -1,0 +1,101 @@
+ 
+*{
+  background-color: burlywood;
+}
+ 
+.expression-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+}
+
+ 
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #aa9a9a, #d9d9d9);
+  box-shadow: 10px 10px 20px #2f2929, -10px -10px 20px #ffffff;
+  transition: transform 0.3s ease;
+}
+
+ 
+.form-container:hover {
+  transform: translate(5px, 5px);
+}
+
+ 
+.form-container label,
+.form-container .rule-type-dropdown,
+.form-container .operator-input,
+.form-container .value-input,
+.form-container .score-input,
+.form-container .delete-button,
+.form-container .submit-button {
+  width: 100%;  
+  margin-bottom: 20px;
+  font-size: 20px;
+
+}
+ 
+.form-container .delete-button {
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  font-size: 18px;
+  width: 8em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+ 
+.form-container .submit-button {
+  margin-top: 10px;
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+  font-size: 18px;
+  width: 8em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+ 
+.form-container label,
+.form-container input,
+.form-container select,
+.form-container button {
+  font-size: 16px;
+}
+
+ 
+@media (min-width: 768px) {
+  .form-container {
+    max-width: 600px;  
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .form-container {
+    max-width: 700px;  
+  }
+}
